@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless Communication Device | Product Landing Page</title>
+    <!-- Add your CSS stylesheet here -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Existing CSS styles for success and error messages (unchanged) */
+        .success-message,
+        .error-message {
+          padding: 10px;
+          margin: 10px 0;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+      
+        .success-message {
+          background-color: #4CAF50;
+          color: #fff;
+        }
+      
+        .error-message {
+          background-color: #f44336;
+          color: #fff;
+        }
+      
+        /* CSS styles for the contact section and form */
+        #contact { /* Use #contact to target the contact section */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        #contact form { /* Use #contact form to target the form */
+          max-width: 400px;
+          width: 100%;
+        }
+      
+        #contact form input,
+        #contact form textarea,
+        #contact form button {
+          width: 100%;
+          margin: 10px 0; /* Increased margin for better spacing */
+          padding: 15px; /* Increased padding for bigger text boxes */
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 18px; /* Increased font size for better readability */
+          box-sizing: border-box;
+        }
+      
+        #contact form button {
+          background-color: #4CAF50;
+          color: #fff;
+          cursor: pointer;
+        }
+      
+        /* New CSS styles for buttons */
+        #contact form button:hover {
+          background-color: #45a049;
+        }
+      
+        #contact form button:focus {
+          outline: none;
+          box-shadow: 0 0 5px #45a049;
+        }
+      </style>
+      
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Add navigation links here -->
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Revolutionary Wireless Communication Device</h1>
+        <p>Experience seamless and reliable wireless communication like never before.</p>
+        <a href="#cta" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <img src="pro1.jpg" alt="Feature 1">
+            <h3>Superior Connectivity</h3>
+            <p>Stay connected with fast and reliable wireless communication technology.</p>
+        </div>
+        <div class="feature-item">
+            <img src="pro2.jpg" alt="Feature 2">
+            <h3>Long-Lasting Battery</h3>
+            <p>Our device comes with an advanced battery that lasts for days on a single charge.</p>
+        </div>
+        <div class="feature-item">
+            <img src="pro3.jpg" alt="Feature 3">
+            <h3>High Security</h3>
+            <p>Protect your data with top-of-the-line encryption and security measures.</p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Our revolutionary wireless communication device utilizes advanced technology to ensure seamless and secure data transmission. Here's how it works:</p>
+
+        <div class="steps">
+            <div class="step-item">
+                <img src="step-1.jpg" alt="Step 1">
+                <h3>Step 1: Pairing</h3>
+                <p>Begin by pairing the device with your smartphone or computer via our intuitive app. The simple setup process ensures a hassle-free connection.</p>
+            </div>
+            <div class="step-item">
+                <img src="step-2.jpg" alt="Step 2">
+                <h3>Step 2: Wireless Communication</h3>
+                <p>Once paired, our device establishes a secure and reliable wireless communication link, allowing you to transfer data with exceptional speed and accuracy.</p>
+            </div>
+            <div class="step-item">
+                <img src="step-3.jpg" alt="Step 3">
+                <h3>Step 3: Advanced Encryption</h3>
+                <p>Your data's security is our top priority. Our device utilizes advanced encryption algorithms to safeguard your information during transmission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="price-item">
+            <h3>Standard</h3>
+            <p>Perfect for personal use</p>
+            <h4>$99.99</h4>
+            <a href="#cta" class="cta-btn">Buy Now</a>
+        </div>
+        <div class="price-item">
+            <h3>Pro</h3>
+            <p>For professional communication needs</p>
+            <h4>$199.99</h4>
+            <a href="#cta" class="cta-btn">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="cta">
+        <h2>Get Your Wireless Communication Device Today</h2>
+        <p>Upgrade your communication experience with our cutting-edge technology.</p>
+        <a href="#pricing" class="cta-btn">View Pricing</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"> <!-- Corrected the section ID to "contact" -->
+        <h2>Contact Us</h2>
+        <form action="index.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Trend Developer Mobin Raja. All rights reserved.</p>
+        <!-- Add social media icons/links here -->
+    </footer>
+<!-- Add this script tag at the end of the HTML body before the closing </body> tag -->
+<script>
+    // Smooth scroll to the contact section when clicking the "Contact" link in the navbar
+    document.querySelector('nav a[href="#contact"]').addEventListener('click', function (event) {
+      event.preventDefault();
+      const contactSection = document.getElementById('contact');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  
+  </script>
+  
+
+  
+    <!-- Add your JavaScript files here -->
+    <script src="script.js"></script>
+</body>
+</html>
